@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List Application</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script type="text/javascript" src="script.js"></script>
-    <div class="container">
-      <textarea
-        id="taskInput"
-        placeholder="Enter your task here"
-      ></textarea>
-      <button onclick="addTaskToList()">Add Task</button>
-      <ul>
-        <li>Task 1 <button>Edit</button><button>Delete</button></li>
-        <li>Task 2 <button>Edit</button><button>Delete</button></li>
-        <li>Task 3 <button>Edit</button><button>Delete</button></li>
-      </ul>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO LIST</title>
+  <link rel="stylesheet" href="assests/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="todo-header">
+      <h1>TO-DO LIST</h1>
+      <img src="assests/image/download (1).png" height="30px"></img>
     </div>
-  </body>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="place your task here">
+      <button id="addTask"><i class="fa-solid fa-plus"></i></button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="assests/js/script.js"></script>
+</body>
+
 </html>
