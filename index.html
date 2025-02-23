@@ -12,15 +12,33 @@
 
 <body>
   <div class="container">
-    <div class="todo-header">
-      <h1>TO-DO LIST</h1>
-      <img src="assests/image/download (1).png" height="30px"></img>
+    <div class="header">
+      <button id="addNotebtn" class="add-button">+</button>
+      <h2>TO-DO LIST</h2>
+      <img src="assests/image/download (1).png" height="30px">
     </div>
-    <div class="input-container">
+
+    <p id="emptyMessage" class="empty-message">There are not any notes</p>
+
+    <div id="colorPalette" class="color-palette hidden">
+      <div class="color-circle" style="background-color: #FF8C5B;"></div>
+      <div class="color-circle" style="background-color: #FFEE99;"></div>
+      <div class="color-circle" style="background-color: #4EC5F1;"></div>
+      <div class="color-circle" style="background-color: #D4F07D;"></div>
+      <div class="color-circle" style="background-color: #BFA2F7;"></div>
+    </div>
+
+    <div id="noteInputCard" class="note-card hidden">
+      <input type="text" id="noteTitle" class="input-field" placeholder="Title">
+      <textarea id="noteContent" class="input-field" placeholder="Content" rows="4"></textarea>
+      <button id="saveNoteBtn" class="save-btn">Save</button>
+    </div>
+    <!-- <div class="input-container">
       <input type="text" id="taskInput" placeholder="place your task here">
       <button id="addTask"><i class="fa-solid fa-plus"></i></button>
-    </div>
-    <ul id="taskList"></ul>
+    </div> -->
+    <!-- <ul id="taskList"></ul> -->
+    <div id="notesContainer" class="notes-container"></div>
   </div>
   <script src="assests/js/script.js"></script>
 </body>
